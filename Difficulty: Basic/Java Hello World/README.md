@@ -1,0 +1,8 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/java-hello-world4004/1?page=3&difficulty=Basic&sortBy=submissions">Java Hello World</a></h2><h3>Difficulty Level : Difficulty: Basic</h3><hr><div class="problems_problem_content__Xm_eO" style="user-select: auto;"><p style="user-select: auto;"><span style="font-size: 18px; user-select: auto;">Display the most famous phrase at the of beginning any programming language, "Hello World" (without Quotes).</span></p>
+<p style="user-select: auto;"><span style="font-size: 18px; user-select: auto;"><strong style="user-select: auto;">Example:</strong></span></p>
+<pre style="user-select: auto;"><span style="font-size: 18px; user-select: auto;"><strong style="user-select: auto;">Input:
+Output:
+</strong>Hello World </span>
+<span style="font-size: 18px; user-select: auto;"><strong style="user-select: auto;">Explanation:
+</strong>Print Hello World on a single line.</span></pre>
+<p style="user-select: auto;"><span style="font-size: 18px; user-select: auto;"><strong style="user-select: auto;">Your Task:&nbsp;&nbsp;</strong><br style="user-select: auto;">You don't need to read any input. Your task is to complete the function <strong style="user-select: auto;">printHelloWorld()</strong> which does not take any input and prints 'Hello World'.<br style="user-select: auto;"><br style="user-select: auto;"><strong style="user-select: auto;">Expected Time Complexity:</strong> O(1)<br style="user-select: auto;"><strong style="user-select: auto;">Expected Auxiliary Space:</strong> O(1)</span></p></div><br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Java</code>&nbsp;
