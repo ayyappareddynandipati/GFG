@@ -50,6 +50,20 @@ class Solution
     static void reverse(Stack<Integer> s)
     {
         // add your code here
-        Collections.reverse(s);
+        if (s.isEmpty()) {
+            return;
+        }
+        int top = s.pop();
+        reverse(s);
+        insertBottom(s, top);
+        }
+       static void insertBottom(Stack<Integer> s, int value) {
+        if (s.isEmpty()) {
+                s.add(value); 
+            } else {
+                int top = s.pop(); 
+                insertBottom(s, value); 
+                s.add(top); 
+            }
     }
 }
