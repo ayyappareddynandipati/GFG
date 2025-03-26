@@ -11,27 +11,28 @@ using namespace std;
 
 class Solution {
   public:
-    int rTod(char c){
-    return (c == 'I') ? 1 :
-           (c == 'V') ? 5 :
-           (c == 'X') ? 10 :
-           (c == 'L') ? 50 :
-           (c == 'C') ? 100 :
-           (c == 'D') ? 500 :
-           (c == 'M') ? 1000 : 0; // Default case if input is invalid
-
-    }
     int romanToDecimal(string &s) {
         // code here
-        int res=0;
-        for(int i=0;i<s.length();i++){
-            if(i+1<s.length() && rTod(s[i])<rTod(s[i+1])){
-                res+=rTod(s[i+1])-rTod(s[i]);
+        unordered_map<char, int> romanMap = {{'I', 1}, {'V', 5}, {'X', 10}, {'L', 50},{'C', 100}, {'D', 500}, {'M', 1000}};
+
+        int res = 0;
+        for (int i = 0; i < s.length(); i++) {
+
+            // If the current value is less than the next value, 
+            // subtract current from next and add to res
+            if (i + 1 < s.length() && romanMap[s[i]] < romanMap[s[i + 1]]) {
+                res += romanMap[s[i + 1]] - romanMap[s[i]];
+
+                // Skip the next symbol
                 i++;
-            }else{
-                res+=rTod(s[i]);
+            }
+            else {
+
+                // Otherwise, add the current value to res
+                res += romanMap[s[i]];
             }
         }
+
         return res;
     }
 };
