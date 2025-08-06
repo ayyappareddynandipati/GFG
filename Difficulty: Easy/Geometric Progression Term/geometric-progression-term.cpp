@@ -1,11 +1,14 @@
-// User function Template for C++
+#include <iostream>
+using namespace std;
 
-void utility(int a, int r, int n) {
-    // Complete the code below
-        int ans = a << (n-1);
-        // Complete the code above
+//Position this line where user code will be pasted.
+int main() {
+    int a, n;
+    cin >> a >> n;
+    int r = 2;
 
-        // The line below prints the output. Don't change it!
+    // code here
+    cout<<a*(1 << n-1);
 
-        cout << ans << endl;
+    return 0;
 }
